@@ -9,7 +9,6 @@ const printPassTimes = function(passTimes) {
   }
 };
 
-
 nextISSTimesForMyLocation((error, passTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
@@ -50,3 +49,7 @@ fetchISSFlyOverTimes(coords, (error, passTimes) => {
 
   console.log('It worked! Returned flyover times:', passTimes);
 });
+
+
+
+module.exports = { printPassTimes }
